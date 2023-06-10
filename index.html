@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Grid</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 10px;
+        }
+        
+        .cell {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .cell a {
+            text-decoration: none;
+            color: inherit;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="cell">
+            <a href="page1.html">
+                <img src="image1.jpg" alt="Image 1" width="100%">
+                <span>Caption 1</span>
+            </a>
+        </div>
+        <div class="cell">
+            <a href="page2.html">
+                <img src="image2.jpg" alt="Image 2" width="100%">
+                <span>Caption 2</span>
+            </a>
+        </div>
+        <div class="cell">
+            <a href="page3.html">
+                <img src="image3.jpg" alt="Image 3" width="100%">
+                <span>Caption 3</span>
+            </a>
+        </div>
+        <!-- Add more cells as needed -->
+    </div>
+</body>
+</html>
