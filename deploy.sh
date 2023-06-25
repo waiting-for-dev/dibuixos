@@ -1,8 +1,9 @@
 git push origin main
 git checkout source
-git merge main --no-ff
+git reset --hard main
 docker exec homemarccodedibuixos ruby index.rb > index.html
 git add index.html
 git commit -m "$(date +%s)"
-git push --set-upstream origin source
+git push --set-upstream --force origin source
 git checkout main
+rm -f index.html
