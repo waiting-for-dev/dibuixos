@@ -46,4 +46,5 @@ end
 puts <<~HTML_BOTTOM
     </div>
 </body>
+</html>
 HTML_BOTTOM
