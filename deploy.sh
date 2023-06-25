@@ -1,6 +1,6 @@
 git push origin main
 git checkout source
-git merge main
+git merge main --no-ff
 docker exec homemarccodedibuixos ruby index.rb > index.html
 git add index.html
 git commit -m "$(date +%s)"
