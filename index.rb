@@ -36,7 +36,7 @@ data.each do |item|
   puts <<~HTML_ITEM
         <div class="cell">
           <a href="#{item["link"]}">
-              <img src="#{item["image"]}" alt="#{item["title"]} width="100%">
+              <img src="#{item["image"]}" alt="#{item["title"]}" width="100%">
               <span>#{item["title"]}</span>
           </a>
         </div>
